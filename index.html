@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACESTORE</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f093fb, #f5576c);
+            background-size: 400% 400%;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            animation: gradientAnimation 10s ease infinite;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+            z-index: 1;
+            animation: slideInDown 1s ease-in-out;
+        }
+        @keyframes slideInDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .items {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            z-index: 1;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            animation: fadeInUp 1s ease-in-out;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+            font-size: 1.2em;
+            animation: fadeInUp 1s ease-in-out;
+        }
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        table th {
+            background-color: #ff6f91;
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 2;
+        }
+        table tr:nth-child(even) {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        table tr:nth-child(odd) {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        table tr:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+            cursor: pointer;
+        }
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        @keyframes gradientAnimation {
+            0%, 100% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+        }
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 1em;
+            animation: fadeInUp 1s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <header>
+        <h1>ACESTORE</h1>
+    </header>
+    <section class="items">
+        <table>
+            <tr>
+                <th>STOCKS</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>NITRO BOOST GIFT LINK</td>
+                <td>2.5$LTC</td>
+            </tr>
+            <tr>
+                <td>soon</td>
+                <td>-----</td>
+            </tr>
+            <tr>
+                <td>-----</td>
+                <td>------</td>
+            </tr>
+            <tr>
+                <td>------</td>
+                <td>------</td>
+            </tr>
+            <!-- Add more items as needed -->
+        </table>
+        <div class="footer">
+            DM on Discord: supernk <br>
+            or Instagram: shamillnk for purchase<br>
+            MADE BY SUPERNK 
+        </div>
+    </section>
+</body>
+</html>
